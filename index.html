@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcel Dave | IT Student</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="body">
+
+    <div class="preloader">
+        <div class="loader-text">rcldvmnl</div>
+        <div class="loader-bar"><div class="bar-fill"></div></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="hero-video-container">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="vecteezy_soft-light-gray-background-features-subtle-wave-patterns_54839285.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <a href="#contact" class="ping-sticker hover-target">
+        <span class="ping-text">Ping a message</span>
+        <span class="ping-icon">👋</span>
+    </a>
+
+    <nav class="top-nav" id="main-nav">
+        <div class="nav-left">
+            <a href="#hero" class="logo hover-target">AD</a>
+        </div>
+        
+        <div class="nav-right desktop-menu">
+            <a href="#about" class="nav-link hover-target">About</a>
+            <a href="#achievements" class="nav-link hover-target">Achievements</a>
+            <a href="#gallery" class="nav-link hover-target">Gallery</a>
+            <a href="#skills" class="nav-link hover-target">Skills</a>
+            <a href="#contact" class="nav-link hover-target">Contact</a>
+        </div>
+
+        <button class="hamburger hover-target" id="hamburger-btn">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-links">
+            <a href="#hero" class="mobile-link hover-target">Home</a>
+            <a href="#about" class="mobile-link hover-target">About</a>
+            <a href="#achievements" class="mobile-link hover-target">Achievements</a>
+            <a href="#gallery" class="mobile-link hover-target">Gallery</a>
+            <a href="#skills" class="mobile-link hover-target">Skills</a>
+            <a href="#contact" class="mobile-link hover-target">Contact</a>
+        </div>
+    </div>
+
+    <div id="personal-details-modal" class="fullscreen-modal">
+        <div class="details-content neumorphic-box">
+            <div class="details-header">
+                <h3>Personal Data</h3>
+                <button id="close-details" class="hover-target"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="details-grid">
+                <div class="panel-item"><strong>Music Genre:</strong> Indie / K-Pop / OPM / Funk</div>
+                <div class="panel-item"><strong>Favorite Artist:</strong> NIKI / Taylor Swift / New Jeans / Wave to Earth</div>
+                <div class="panel-item"><strong>Hobby:</strong> Listening to Music / Motorcycle Touring / Watching Anime</div>
+                <div class="panel-item"><strong>Gaming:</strong> Valorant / Delta Force / RPGs</div>
+                <div class="panel-item"><strong>Coffee Order:</strong> Iced Caramel Macchiato</div>
+                <div class="panel-item"><strong>Location:</strong> Nagcarlan, Laguna, Philippines</div>
+                <div class="panel-item"><strong>Zodiac:</strong> Aries</div>
+                <div class="panel-item"><strong>Height:</strong> 166cm</div>
+                <div class="panel-item"><strong>MBTI Type:</strong> INTJ</div>
+                <div class="panel-item"><strong>Languages:</strong> Tagalog / English</div>
+                <div class="panel-item"><strong>Code Editor:</strong> VS Code (Dark Mode)</div>
+                <div class="panel-item"><strong>Keyboard:</strong> Mechanical Zeus G61</div>
+                <div class="panel-item"><strong>Daily Driver:</strong> Windows 11</div>
+                <div class="panel-item"><strong>Phone:</strong> Android</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="universal-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close hover-target">×</button>
+            <div class="modal-split">
+                <div class="modal-image-col">
+                    <img id="modal-img" src="" alt="Detail">
+                </div>
+                <div class="modal-text-col">
+                    <h2 id="modal-title">Title</h2>
+                    <p id="modal-desc">Description</p>
+                    <div class="modal-meta">
+                        <span>Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="hero" class="hero-section">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <span>RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL </span>
+                <span>RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL RCLDVMNL </span>
+            </div>
+        </div>
+        
+        <div class="hero-foreground">
+            <div class="portrait-container" id="hero-portrait">
+                <img src="manalo.jpg" alt="Arcel Dave Portrait"> 
+            </div>
+            <div class="hero-text">
+                <h1 class="reveal-text">Arcel Dave</h1>
+                <p class="reveal-text delay-1">Information Technology Student</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-layer">
+        
+        <section id="about" class="about-section">
+            <div class="container split-layout">
+                <div class="col-left reveal-up">
+                    <h2 class="section-title expressive-text">Who I Am.</h2>
+                    <p class="bio-text">
+                        I’m Arcel Dave, a creative IT student at Laguna State Polytechnic University in Laguna. I enjoy mixing technology with creativity. I like to call myself a “vibe coder” because for me, a website is not just about clean code, its also about how it feels when people use it.
+                    </p>
+                    
+                    <div class="about-socials">
+                        <a href="https://www.facebook.com/rcldvmnl/" target="_blank" class="social-bubble hover-target fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rcldvmnl/" target="_blank" class="social-bubble hover-target ig"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/arceldavemanalo507-prog" target="_blank" class="social-bubble hover-target gh"><i class="fab fa-github"></i></a>
+                        <a href="mailto:arceldavemanalo507@email.com" class="social-bubble hover-target em"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-right reveal-up delay-1">
+                    <h2 class="section-title expressive-text">My Philosophy.</h2>
+                    <p class="bio-text">
+                        I believe good design shouldn’t be obvious, it should just feel right. For me, less is always more. I focus on clean, simple designs with a clear purpose. Using HTML, CSS, and C#, I try to remove anything unnecessary so the software and websites I create feel calm, easy to use, and effective.
+
+                    </p>
+                    
+                    <div class="about-actions">
+                        <button class="btn-water hover-target" id="open-personal-details">
+                            <span class="btn-content">
+                                Personal Details <i class="fas fa-id-card"></i>
+                            </span>
+                        </button>
+                        
+                        <a href="resume.pdf" target="_blank" class="btn-blob hover-target">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <h2 class="section-title reveal-up expressive-text">Achievements</h2>
+                <div class="bento-grid">
+                    
+                    <div class="bento-card hover-target reveal-up" 
+                         data-title="HTML Essentials" 
+                         data-desc="HTML Essentials is a foundational course offered by the Cisco Networking Academy in collaboration with the OpenEDG JS Institute. It is designed for beginners to learn the fundamental structure and syntax required to build modern, interactive web pages." 
+                         data-img="html.png">
+                        <div class="bento-bg"></div>
+                        <div class="bento-content">
+                            <span class="award-year">2025</span>
+                            <h3>HTML Essentials</h3>
+                            <i class="fas fa-arrow-up-right-from-square card-action-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="bento-card hover-target reveal-up delay-1"
+                         data-title="Excel Associate" 
+                         data-desc="The Microsoft Office Specialist (MOS): Excel Associate (Office 2019) is an industry-recognized certification that validates a candidate's fundamental proficiency in using Microsoft Excel 2019." 
+                         data-img="microsoft-office-specialist-excel-associate-office-2019.png">
+                         <div class="bento-bg"></div>
+                         <div class="bento-content">
+                            <span class="award-year">2025</span>
+                            <h3>Excel Associate</h3>
+                            <i class="fas fa-arrow-up-right-from-square card-action-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="bento-card hover-target reveal-up delay-2"
+                         data-title="Python Essentials 1" 
+                         data-desc="The Cisco Python Essentials series, developed in partnership with the OpenEDG Python Institute, offers a free, two-part curriculum designed to transform beginners into certification-ready programmers for 2025. The introductory Python Essentials 1 course focuses on core fundamentals such as syntax, data types, and logic, preparing learners for the PCEP (Certified Entry-Level Python Programmer) exam. The subsequent Python Essentials 2 course dives into advanced topics like object-oriented programming (OOP), modules, and exceptions, aligning with the PCAP (Certified Associate in Python Programming) certification. " 
+                         data-img="pythonn.png">
+                         <div class="bento-bg"></div>
+                         <div class="bento-content">
+                            <span class="award-year">2025</span>
+                            <h3>Python Essentials</h3>
+                            <i class="fas fa-arrow-up-right-from-square card-action-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="bento-card wide hover-target reveal-up"
+                         data-title="NCII CSS Passer" 
+                         data-desc="CSS NC II stands for Computer Systems Servicing National Certificate Level II, a Philippine technical-vocational qualification from TESDA (Technical Education and Skills Development Authority) that trains individuals to install, configure, maintain, and repair computer systems and networks, preparing them for careers as IT support, computer technicians, and network administrators. It's a key part of the K to 12 ICT strand, providing practical skills for the tech industry. " 
+                         data-img="tesda.png">
+                         <div class="bento-bg"></div>
+                         <div class="bento-content">
+                            <span class="award-year">2025</span>
+                            <h3>NCII Passer</h3>
+                            <i class="fas fa-arrow-up-right-from-square card-action-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="bento-card wide hover-target reveal-up delay-1"
+                         data-title="Academic & Leadership" 
+                         data-desc="With High Honors 
+                         - Work Immersion Awardee
+                         - Certificate of Training 2025 JDVP: CSS
+                         - TESDA Passer: CSS NC II
+                         - Conduct Awardee
+                         - Computer Systems Servicing Leadership Awardee" 
+                         data-img="honor.jpg">
+                         <div class="bento-bg"></div>
+                         <div class="bento-content">
+                            <span class="award-year">2025</span>
+                            <h3>With High Honors</h3>
+                            <i class="fas fa-arrow-up-right-from-square card-action-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="work-section">
+            <div class="container">
+                <h2 class="section-title reveal-up expressive-text">Gallery</h2>
+                
+                <div id="work-preview" class="floating-preview">
+                    <img id="work-preview-img" src="" alt="">
+                </div>
+
+                <ul class="project-list">
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="coding.jpg"
+                        data-title="VS Code" data-desc="My daily tool for learning code.">
+                        <span class="p-num">01</span>
+                        <span class="p-name">VS Code</span>
+                        <span class="p-cat">Code</span>
+                    </li>
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="foods.jpg"
+                        data-title="Food Trips" data-desc="Exploring local flavors and spots.">
+                        <span class="p-num">02</span>
+                        <span class="p-name">Outdoor Foodie</span>
+                        <span class="p-cat">Food</span>
+                    </li>
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="guitar.jpg"
+                        data-title="Bass Guitar" data-desc="Playing music to relax my mind and worship to God.">
+                        <span class="p-num">03</span>
+                        <span class="p-name">Bassist</span>
+                        <span class="p-cat">Me</span>
+                    </li>
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="kape.jpg"
+                        data-title="Coffee Break" data-desc="Fuel for late night study sessions.">
+                        <span class="p-num">04</span>
+                        <span class="p-name">Coffee Lover</span>
+                        <span class="p-cat">Food</span>
+                    </li>
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="rides.jpg"
+                        data-title="Motorcycle" data-desc="Touring Other Places on two wheels.">
+                        <span class="p-num">05</span>
+                        <span class="p-name">Rider</span>
+                        <span class="p-cat">Travel</span>
+                    </li>
+                    <li class="project-item hover-target reveal-up" 
+                        data-img="theater.jpg"
+                        data-title="The Arts" data-desc="Appreciating visuals and performance.">
+                        <span class="p-num">06</span>
+                        <span class="p-name">Theatro</span>
+                        <span class="p-cat">Me</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title reveal-up expressive-text">Skills</h2>
+                <div class="colorful-grid">
+                    
+                    <div class="color-card card-yellow hover-target reveal-up">
+                        <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Structure</span>
+                                <i class="fas fa-code card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <i class="fab fa-html5 card-icon"></i>
+                                <h3>HTML5</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Building the skeleton of websites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-card card-red hover-target reveal-up delay-1">
+                        <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Style</span>
+                                <i class="fas fa-paint-brush card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <i class="fab fa-css3-alt card-icon"></i>
+                                <h3>CSS3</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Designing layouts and adding colors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-card card-green hover-target reveal-up">
+                         <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Logic</span>
+                                <i class="fas fa-terminal card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <span class="card-icon-text">C#</span>
+                                <h3>C-Sharp</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Writing logic for desktop apps.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-card card-pink hover-target reveal-up delay-1">
+                         <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Scripting</span>
+                                <i class="fas fa-robot card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <i class="fab fa-python card-icon"></i>
+                                <h3>Python</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Data types, automation, and foundational programming.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-card card-blue hover-target reveal-up">
+                         <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Motion</span>
+                                <i class="fas fa-film card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <i class="fas fa-play card-icon"></i>
+                                <h3>Motion</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Making smooth website transitions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-card card-purple hover-target reveal-up delay-1">
+                         <div class="card-inner">
+                            <div class="card-top">
+                                <span class="card-tag">Visuals</span>
+                                <i class="fas fa-pen-nib card-icon-sm"></i>
+                            </div>
+                            <div class="card-main">
+                                <i class="fas fa-layer-group card-icon"></i>
+                                <h3>UI Design</h3>
+                            </div>
+                            <div class="card-hidden">
+                                <p>Creating clean and simple looks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer-section">
+            <div class="container">
+                <h2 class="footer-big-text reveal-up">LET'S START A PROJECT</h2>
+                
+                <div class="footer-grid">
+                    <form class="contact-form reveal-up">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" class="hover-target">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Your Email" class="hover-target">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell me about your idea..." class="hover-target"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary hover-target btn-send">Send Message</button>
+                    </form>
+
+                    <div class="footer-info reveal-up delay-1">
+                        <div class="time-widget">
+                            <span>Nagcarlan, Laguna</span>
+                            <h3 id="clock">00:00 AM</h3>
+                        </div>
+                        <div class="footer-links">
+                            <a href="https://www.facebook.com/rcldvmnl/" target="_blank" class="hover-target"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/rcldvmnl/" target="_blank" class="hover-target"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://github.com/arceldavemanalo507-prog" target="_blank" class="hover-target"><i class="fab fa-github"></i></a>
+                            <a href="mailto:arceldavemanalo507@email.com" class="hover-target"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    &copy; 2025 Arcel Dave. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
